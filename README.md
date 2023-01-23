@@ -50,6 +50,7 @@ require('lazy').setup({
 use({
     "glepnir/lspsaga.nvim",
     branch = "main",
+    requires = { 'nvim-tree/nvim-web-devicons' }, -- optional
     config = function()
         require('lspsaga').setup({})
     end,

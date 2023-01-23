@@ -29,6 +29,7 @@ function libs.icon_from_devicon(ft, color)
     if not ok then
       return { ' ', ' ' }
     end
+    devicons.setup()
     libs.devicons = devicons
   end
   local icon, hl = libs.devicons.get_icon_by_filetype(ft)
